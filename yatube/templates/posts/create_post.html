@@ -1,0 +1,31 @@
+<!-- templates/posts/create_post.html -->
+{% extends 'base.html' %}
+{% block title %} Новый пост {{ group }} {% endblock %}
+{% block content %}
+  <div class="row justify-content-center">
+    <div class="col-md-8 p-5">
+      <div class="card">
+        <div class="card-header">
+          {% if is_edit %}Редактировать
+          {% else %}Новый пост
+          {% endif %}
+        </div>
+        <div class="card-body">
+          <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+          
+            {% include 'includes/form.html' %}
+          
+            <div class="d-flex justify-content-end">
+              <button type="submit" class="btn btn-primary">
+                {% if is_edit %}Сохранить
+                {% else %}Добавить
+                {% endif %}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
