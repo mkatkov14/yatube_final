@@ -1,9 +1,5 @@
 # **YAtube_final**
-## _проект Yatube "Социальная сеть блогеров"_
-
-[![N|Solid]()
-
-[![Build Status]()
+## проект Yatube "Социальная сеть блогеров"
 
 Дает пользователям возможность создать учетную запись, публиковать записи, подписываться на любимых авторов и отмечать понравившиеся записи
 
@@ -12,12 +8,13 @@
 - Django 2.2.19
 - HTML, CSS
 - SQLite
--
+- Pytest
 
 ### _Как запустить проект в dev-режиме_
+* Сделать Fork репозитория
 * Клонировать репозиторий и перейти в него в командной строке:
 ```
-git clone git@github.com:mkatkov14/Yatube_final.git
+git clone <ссылка_сгенерированная_в_вашем_репозитории>
 ```
 ```
 cd yatube_final
@@ -40,7 +37,7 @@ source venv/Script/activate
 ```
 * Обновить pip
 ```
-python -m pip install --upgrade pip
+python3 -m pip install --upgrade pip
 ```
 * Установить зависимости из файла requirements.txt:
 ```
@@ -48,10 +45,11 @@ pip install -r requirements.txt
 ```
 * Выполнить миграции:
 ```
-python manage.py migrate
+python3 manage.py migrate
 ```
 
 * Запустить проект:
 ```
-python manage.py runserver
+python3 manage.py runserver
 ```
+_*  в Windows вместо команды "python3" использовать "python"_
