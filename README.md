@@ -35,10 +35,6 @@ python -m venv venv
 ```
 source venv/Script/activate
 ```
-* Обновить pip
-```
-python3 -m pip install --upgrade pip
-```
 * Установить зависимости из файла requirements.txt:
 ```
 pip install -r requirements.txt
