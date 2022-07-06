@@ -39,7 +39,10 @@ source venv/Script/activate
 ```
 pip install -r requirements.txt
 ```
-* Выполнить миграции:
+* перейти в папку yatube, и выполнить миграции:
+```
+cd yatube
+```
 ```
 python3 manage.py migrate
 ```
